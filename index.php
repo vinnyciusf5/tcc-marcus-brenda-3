@@ -42,8 +42,8 @@
                         Entrar com o Facebook
                     </a>
                 </div>
-                <div class="social-field cadastro" onclick="btcadastro()" id="btcadastro">
-                    <a href="#"> 
+                <div class="social-field cadastro" id="btcadastro">
+                    <a href="formulario.php"> 
                         Criar nova conta
                     </a>
                 </div>
