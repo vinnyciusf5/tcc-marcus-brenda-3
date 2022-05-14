@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_formulario.css">
 </head>
 <body>
     <main>
@@ -25,7 +25,8 @@
             <span>Ou</span>
         </div>
 
-        <form action="">
+        <form action="cadastro_formulario.php" method="POST">
+
             <label for="name">
                 <span>Nome</span>
                 <input type="text" id="name" name="name" required>
@@ -61,7 +62,8 @@
                 <input type="text" id="curso" name="curso" required>
             </label>
 
-            <input type="submit" value="Entrar" id="button">
+            <input type="submit" value="Entrar" id="submit">
+
         </form>
     </main>
     <section class="images">

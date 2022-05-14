@@ -1,3 +1,3 @@
 function btcadastro(){
-    window.location.href='cadastro/index.html'
+    window.location.href='formulario.php'
 }
