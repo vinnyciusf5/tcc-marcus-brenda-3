@@ -23,7 +23,7 @@
             echo "Erro";   
         }
         mysqli_close($conexao);
-        header('Location: index.html');
+        header('Location: index.php');
         exit();
         //$result = mysqli_query($conexao, "INSERT INTO usuarios(name, email, username, password, faculdade, semestre, curso) 
         //VALUES ('$nome','$email','$username','$password','$faculdade','$semestre','$curso')");

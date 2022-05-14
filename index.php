@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
     <title>Login-tcc</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_index.css">
     <script src="script.js"></script>
 </head>
 <body>
     <main class="container">
         <img src="img/logo2.png" alt="some text" width=300px height=75px id="img-logo-capelo">
         <h2>Login</h2>
-        <form action="">
+        <form action="teste_login.php" method="POST">
             <div class="input-field">
                 <input type="text" name="username" id="username" required
                     placeholder="Nome de Usuário">
