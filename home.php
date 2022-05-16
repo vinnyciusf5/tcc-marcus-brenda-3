@@ -29,8 +29,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <img src="img/logo.png" alt="" width=150px id="navbar_logo">
     <div>
-          <a href="sair_home.php"><img src="img/sair.png" alt="" width=30%></a>
+        <a href="sair_home.php"><button id="btsair">Sair</button></a>
     </div>
   </nav>
 </div>
@@ -38,9 +40,7 @@
 <body>
 
 <?php
-    echo "<h1>Bem vindo <u>$logado</u></h>";
+    //echo "<h1>Bem vindo <u>$logado</u></h>";
 ?>
-<br>
- <img src="img/logo.png" alt="some text" width=30% sss >
 </body>
 </html>
