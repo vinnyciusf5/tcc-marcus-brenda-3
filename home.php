@@ -4,6 +4,11 @@
         header('location: index.php');
     }
     $logado = $_SESSION['username'];
+    $senha = $_SESSION['password'];
+
+    $name = $_SESSION['name'];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +42,55 @@
   </nav>
 </div>
 <!-------------------------------------------------------------FINAL DO NAVBAR------------------------------------------------------->
+<!------------------------------------------------------------------PERFIL------------------------------------------------------------>
+<div class="feed">
+
+
+<div class="perfil">
+  <?php
+   // echo "Username: $logado";
+   // echo "Username: $senha";
+
+    echo "Nome: $name";
+  ?>
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------Barra de Menu----------------------------------------------------------->
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Disabled</a>
+  </li>
+</ul>
+<!----------------------------------------------------------------POST-------------------------------------------------------------------->
+<div class="card mb-3">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+  <img src="..." class="card-img-bottom" alt="...">
+</div>
+
+</div>
 <body>
+<!------------------------------------------------------------------------------------------------------------------------------------>
 
 <?php
     //echo "<h1>Bem vindo <u>$logado</u></h>";
