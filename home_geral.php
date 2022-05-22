@@ -3,12 +3,8 @@
     if((!isset($_SESSION['username']) == true) and (!isset($_SESSION['password']) == true)){
         header('location: index.php');
     }
-    $logado = $_SESSION['username'];
+    $nome_user = $_SESSION['username'];
     $senha = $_SESSION['password'];
-
-    $name = $_SESSION['name'];
-
-
 ?>
 
 <!DOCTYPE html>
@@ -44,10 +40,10 @@
 <!-------------------------------------------------------------FINAL DO NAVBAR------------------------------------------------------->
 <!------------------------------------------------------------------PERFIL------------------------------------------------------------>
 <div class="perfil">
+  <p><img src="img/user.png" alt=""  class="foto_user"></p>
   <?php
-   // echo "Username: $logado";
+    echo "<h1>$nome_user</h1>";
    // echo "Username: $senha";
-
     //echo "Nome: $name";
   ?>
 </div>

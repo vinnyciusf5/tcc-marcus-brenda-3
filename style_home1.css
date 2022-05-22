@@ -21,4 +21,12 @@ div.feed{
 }
 div.perfil{
     text-align: center;
+
+}
+img.foto_user{
+    width: 150px;
+    padding: 10px;
+}
+div.postador{
+    padding: 10px 300px;
 }

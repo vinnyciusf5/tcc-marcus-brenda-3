@@ -7,19 +7,19 @@ ob_start();
     </head>
     <body>
         <?php
-        include("config_formulario.php");
+        include("config_postagem.php");
 
-        $username=($_POST['username']);
-        $password=($_POST['password']);
+        $titulo=($_POST['titulo']);
+        $descricao=($_POST['descricao']);
 
-        $sql="SELECT * FROM usuarios WHERE username='$username' AND password='$password';";
+        $sql="SELECT * FROM posts WHERE titulo='$titulo' AND descricao='$descricao';";
         $resultado=mysqli_query($conexao, $sql);
         $linhas=mysqli_affected_rows($conexao);
 
         if($linhas>0){
             session_start();
-            $_SESSION["username"]=$username;
-            $_SESSION["password"]=$password;
+            $_SESSION["titulo"]=$titulo;
+            $_SESSION["descricao"]=$descricao;
 
             header("location: home.php");
         }else{
