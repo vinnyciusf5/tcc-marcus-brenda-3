@@ -17,5 +17,8 @@ div#apz{
     text-align: center;
 }
 div.feed{
-        padding: 50px 50px;
+    padding: 10px 300px;
+}
+div.perfil{
+    text-align: center;
 }

@@ -3,7 +3,7 @@
     if((!isset($_SESSION['username']) == true) and (!isset($_SESSION['password']) == true)){
         header('location: index.php');
     }
-    $nome_user = $_SESSION['username'];
+    $logado = $_SESSION['username'];
     $senha = $_SESSION['password'];
 
     $name = $_SESSION['name'];
@@ -44,10 +44,8 @@
 <!-------------------------------------------------------------FINAL DO NAVBAR------------------------------------------------------->
 <!------------------------------------------------------------------PERFIL------------------------------------------------------------>
 <div class="perfil">
-  
   <?php
-    
-    echo "Username: $nome_user";
+   // echo "Username: $logado";
    // echo "Username: $senha";
 
     //echo "Nome: $name";
@@ -59,10 +57,10 @@
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="home.php">Informes</a>
+    <a class="nav-link" aria-current="page" href="home.php">Informes</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="home_geral.php">Geral</a>
+    <a class="nav-link active" href="home_geral.php">Geral</a>
   </li>
 </ul>
 
@@ -70,12 +68,9 @@
 <!----------------------------------------------------------------POST-------------------------------------------------------------------->
 <div class="feed">
 
-<div class="card mb-3">
-  <img src="..." class="card-img-top" alt="...">
+<div class="card">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    This is some text within a card body.
   </div>
 </div>
 
