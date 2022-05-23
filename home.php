@@ -1,10 +1,20 @@
 <?php
     session_start();
+    include("config_formulario.php");
+
     if((!isset($_SESSION['username']) == true) and (!isset($_SESSION['password']) == true)){
         header('location: index.php');
     }
     $nome_user = $_SESSION['username'];
     $senha = $_SESSION['password'];
+
+//---------------------------------CONEXÃO DB SELECT----------------------------------------------------------------------------------
+
+    $sql = "SELECT * FROM posts ORDER BY id DESC";
+    $resultado=mysqli_query($conexao, $sql);
+
+    //print_r($resultado);
+
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +27,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Home</title>
 </head>
-
 <!----------------------------------------------------------INICIO DO NAVBAR-------------------------------------------------------->
 <div class="pos-f-t">
   <div class="collapse" id="navbarToggleExternalContent">
@@ -48,9 +57,13 @@
   ?>
 </div>
 <!------------------------------------------------------------------POSTADOR-------------------------------------------------------------->
+<hr size="10" width="100%">
 
+<div class="bt_post">
+<a class="btn btn-primary" href="publicação_informes/publicacao_formulario.php" role="button">Criar publicação</a>
+</div>
 <!------------------------------------------------------------Barra de Menu----------------------------------------------------------->
-<div class="feed">
+<div class="feed">  
 
 <ul class="nav nav-tabs">
   <li class="nav-item">
@@ -68,12 +81,38 @@
 <div class="card mb-3">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
+    <h5 class="card-title">      
+      <?php
+        while($user_data = mysqli_fetch_assoc($resultado)){
+          echo "<tr>";
+          echo "<td>".$user_data['titulo']."</td>";
+        }
+      ?>
+      </h5>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
 
+</div>
+
+
+
+
+<div>
+<div class="table">
+  <thead>
+  
+  </thead>
+  <tbody>
+      <?php
+        while($user_data = mysqli_fetch_assoc($resultado)){
+          echo "<tr>";
+          echo "<td>".$user_data['id']."</td>";
+        }
+      ?>
+  </tbody>
+      </div>
 </div>
 <body>
 <!------------------------------------------------------------------------------------------------------------------------------------>
