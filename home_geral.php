@@ -1,10 +1,18 @@
 <?php
     session_start();
+    include("config_formulario.php");
+
     if((!isset($_SESSION['username']) == true) and (!isset($_SESSION['password']) == true)){
         header('location: index.php');
     }
     $nome_user = $_SESSION['username'];
     $senha = $_SESSION['password'];
+
+//---------------------------------CONEXÃO DB SELECT----------------------------------------------------------------------------------
+
+    $sql = "SELECT * FROM posts ORDER BY id DESC";
+    $resultado=mysqli_query($conexao, $sql);
+    //print_r($resultado);
 ?>
 
 <!DOCTYPE html>
@@ -69,11 +77,31 @@
 <!----------------------------------------------------------------POST-------------------------------------------------------------------->
 <div class="feed">
 
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
+<table class="tables">
+  <thead>
+    <tr>
+      <th scope="colgroup"></th>
+      <th scope="colgroup"></th>
+      <th scope="colgroup"></th>
+      <th scope="colgroup"></th>
+    </tr>
+  </thead>
+  <tbody>
+  <?php
+        while($user_data = mysqli_fetch_assoc($resultado)){
+          echo "<tr>";
+          echo "<td><b>".$user_data['titulo']."</b></td><tr>";
+          echo "<td>".$user_data['descricao']."</td>";
+        }
+      ?>
+  </tbody>
+</table>
+
+<?php
+
+?>
+
+
 
 </div>
 <body>
@@ -82,5 +110,11 @@
 <?php
     //echo "<h1>Bem vindo <u>$logado</u></h>";
 ?>
+<!-----------------------------------------------------------RODAPÉ------------------------------------------------------------------------->
+
+<footer class = "rodape">
+<hr size="10" width="100%">
+
+</footer>
 </body>
 </html>
