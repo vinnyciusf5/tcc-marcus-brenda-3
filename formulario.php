@@ -62,6 +62,11 @@
                 <input type="text" id="curso" name="curso" required>
             </label>
 
+            <label for="ra">
+                <span>RA</span>
+                <input type="text" id="ra" name="ra" required>
+            </label>
+
             <input type="submit" value="Entrar" id="submit">
 
         </form>

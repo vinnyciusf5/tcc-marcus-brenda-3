@@ -13,9 +13,11 @@
         $faculdade = $_POST['faculdade'];
         $semestre = $_POST['semestre'];
         $curso = $_POST['curso'];
+        $ra = $_POST['ra'];
 
-        $sql="INSERT INTO usuarios(name, email, username, password, faculdade, semestre, curso) 
-        VALUES ('$nome','$email','$username','$password','$faculdade','$semestre','$curso')";
+
+        $sql="INSERT INTO usuarios(name, email, username, password, faculdade, semestre, curso, ra) 
+        VALUES ('$nome','$email','$username','$password','$faculdade','$semestre','$curso','$ra')";
 
         if(mysqli_query($conexao, $sql)){
             echo "Usuario cadastrado com sucesso";
@@ -25,7 +27,7 @@
         mysqli_close($conexao);
         header('Location: index.php');
         exit();
-        //$result = mysqli_query($conexao, "INSERT INTO usuarios(name, email, username, password, faculdade, semestre, curso) 
+        //$result = mysqli_query($conexao, "INSERT INTO usuarios(name, email, username, password, faculdade, semestre, curso, ra) 
         //VALUES ('$nome','$email','$username','$password','$faculdade','$semestre','$curso')");
   //  }
 ?>
