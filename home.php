@@ -10,7 +10,7 @@
 
 //---------------------------------CONEXÃO DB SELECT----------------------------------------------------------------------------------
 
-    $sql = "SELECT * FROM posts ORDER BY id DESC";
+    $sql = "SELECT * FROM post ORDER BY id DESC";
     $resultado=mysqli_query($conexao, $sql);
 
     //print_r($resultado);

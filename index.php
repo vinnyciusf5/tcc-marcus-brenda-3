@@ -12,7 +12,7 @@
     <main class="container">
         <img src="img/logo2.png" alt="some text" width=300px height=75px id="img-logo-capelo">
         <h2>Login</h2>
-        <form action="teste_login.php" method="POST">
+        <form action="validacao_login.php" method="POST">
             <div class="input-field">
                 <input type="text" name="username" id="username" required
                     placeholder="Nome de Usuário">
