@@ -8,10 +8,10 @@
     $nome_user = $_SESSION['username'];
     $senha = $_SESSION['password'];
 
-//---------------------------------CONEXÃO DB SELECT----------------------------------------------------------------------------------
+//---------------------------------CONEXÃO DB SELECT COM ERRO VIGENTE DEVE SER CONCERTADO----------------------------------------------------------------------------------
 
-    $sql = "SELECT * FROM post ORDER BY id DESC";
-    $resultado=mysqli_query($conexao, $sql);
+   // $sql = "SELECT * FROM post ORDER BY id DESC";
+   // $resultado=mysqli_query($conexao, $sql);
 
     //print_r($resultado);
 
