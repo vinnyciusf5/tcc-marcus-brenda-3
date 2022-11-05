@@ -1,0 +1,22 @@
+div#menuinterativo{
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(78, 110, 198);
+}
+input#bt1{
+    width: 100px;
+    height: 150px;
+    color: rgb(78, 110, 198);
+}
+input#bt2{
+    width: 100px;
+    height: 150px;
+}
+input#bt3{
+    width: 100px;
+    height: 150px;
+}
+input#bt4{
+    width: 100px;
+    height: 150px;
+}

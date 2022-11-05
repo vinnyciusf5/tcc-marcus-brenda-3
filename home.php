@@ -25,6 +25,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_home1.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="menuinterativo.css">
     <title>Home</title>
 </head>
 <!----------------------------------------------------------INICIO DO NAVBAR-------------------------------------------------------->
@@ -36,9 +37,6 @@
     </div>
   </div>
     <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
         <img src="img/logo.png" alt="" width=150px id="navbar_logo">
     <div>
@@ -48,14 +46,12 @@
 </div>
 <!-------------------------------------------------------------FINAL DO NAVBAR------------------------------------------------------->
 <!------------------------------------------------------------------PERFIL------------------------------------------------------------>
-<div class="perfil">
-  <p><img src="img/user.png" alt=""  class="foto_user"></p>
-  <?php
-    echo "<h1>$nome_user</h1>";
-   // echo "Username: $senha";
-    //echo "Nome: $name";
-  ?>
-</div>
+<div id="menuinterativo">
+        <input type="button" value="" id="bt1">
+        <input type="button" value="" id="bt2">
+        <input type="button" value="" id="bt3">
+        <input type="button" value="" id="bt4">
+    </div>
 <!------------------------------------------------------------------POSTADOR-------------------------------------------------------------->
 <hr size="10" width="100%">
 
