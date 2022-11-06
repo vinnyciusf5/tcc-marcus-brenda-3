@@ -27,10 +27,7 @@
 
         <form action="cadastro_formulario.php" method="POST">
 
-            <label for="name">
-                <span>Nome</span>
-                <input type="text" id="name" name="name" required>
-            </label>
+             
 
             <label for="email">
                 <span>E-mail</span>

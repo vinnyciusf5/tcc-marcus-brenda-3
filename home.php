@@ -55,6 +55,10 @@
 <!------------------------------------------------------------------POSTADOR-------------------------------------------------------------->
 <hr size="10" width="100%">
 
+<div>
+      <textarea rows="5" cols="40" maxlength="500"></textarea>
+</div>
+
 <div class="bt_post">
 <a class="btn btn-primary" href="publicação_informes/publicacao_formulario.php" role="button">Criar publicação</a>
 </div>

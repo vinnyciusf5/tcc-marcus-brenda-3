@@ -3,18 +3,31 @@ div#menuinterativo{
     padding: 50px;
 }
 input#bt1{
-    width: 10px;
-    height: 150px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(72, 75, 174);
+    border-radius: 10px;
+    border: 0px;
+    
 }
 input#bt2{
     width: 100px;
-    height: 150px;
+    height: 50px;
+    background-color: rgb(211, 135, 42);
+    border-radius: 10px;
+    border: 0px;
 }
 input#bt3{
     width: 100px;
-    height: 150px;
+    height: 50px;
+    background-color: rgb(179, 223, 44);
+    border-radius: 10px;
+    border: 0px;
 }
 input#bt4{
     width: 100px;
-    height: 150px;
+    height: 50px;
+    background-color: rgb(185, 102, 102);
+    border-radius: 10px;
+    border: 0px;
 }
